@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="50dp"
+                    android:background="@color/green_light"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="Medicine Reminder Application"
+                    android:textColor="@color/green"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/aldrich"
+                    android:textSize="20sp"
+                    android:text="Medicine Name" />
+
+<!--                <EditText-->
+<!--                    android:id="@+id/medicineName"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Enter medicine name"-->
+<!--                    android:inputType="text" />-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/medicineName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aldrich"
+                        android:textSize="15sp"
+                        android:hint="Enter Medicine Name" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Date"
+                    android:fontFamily="@font/aldrich"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/dateButton"
+                    style="?android:spinnerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:onClick="onDateButtonClick"
+                    android:text="Select date"
+                    android:fontFamily="@font/aldrich"
+                    android:textSize="15sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Time Of The Day"
+                    android:fontFamily="@font/aldrich"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/timeButton"
+                    style="?android:spinnerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:onClick="onTimeButtonClick"
+                    android:text="Select time"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/aldrich"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/setReminderButton"
+                    android:onClick="onSetReminderButtonClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Set Reminder"
+                    android:fontFamily="@font/aldrich"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/cancelReminderButton"
+                    android:onClick="onCancelReminderButtonClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Cancel Reminder"
+                    android:fontFamily="@font/aldrich"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:id="@+id/showRemindersButton"
+                    android:onClick="onShowRemindersButtonClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="View Reminder History"
+                    android:fontFamily="@font/aldrich"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>

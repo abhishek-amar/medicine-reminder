@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MiniProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/blue_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+
+    <style name="MyDatePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/green_light</item>
+        <!--selected Item color-->
+        <item name="colorControlActivated">@color/green</item>
+        <!-- Highlight item color-->
+        <item name="colorControlHighlight">@color/green_light</item>
+        <!--Calender Background color -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- Calender Number color arrow color (< >) -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!--day , month-->
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <!-- year-->
+        <item name="android:textColorSecondaryInverse">@color/green</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+    </style>
+
+    <style name="MyTimePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">@color/green_light</item>
+        <item name="android:colorControlActivated">@color/green</item>
+        <item name="android:numbersBackgroundColor">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+    </style>
+
+    <style name="Theme.MiniProject" parent="Base.Theme.MiniProject" />
+</resources>
